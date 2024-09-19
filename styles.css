@@ -1,0 +1,66 @@
+/* reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css variables */
+:root {
+  --main-font: "Outfit", sans-serif;
+  --color-white: hsl(0, 0%, 100%);
+  --container-bg: hsl(212, 45%, 89%);
+  --slate500: hsl(216, 15%, 48%);
+  --slate900: hsl(218, 44%, 22%);
+}
+
+/* adding the font family using the css variable i created above */
+body {
+  font-family: var(--main-font);
+}
+
+/* styles for the main component */
+
+.main {
+    background-color: var(--container-bg);
+    min-width: 375px;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-white);
+    max-width: 370px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.box > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.box2 {
+    padding-block-start: 24px;
+    padding-inline: 16px;
+    padding-block-end: 14px;
+    text-align: center;
+}
+
+.box2 > p:first-of-type {
+    color: var(--slate900);
+    font-size: 24px;
+    font-weight: 700;
+    margin-block-end: 10px;
+}
+
+.box2 > p + p {
+    color: var(--slate500);
+    font-size: 18px;
+    font-weight: 400;
+}
