@@ -21,83 +21,60 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![A screenshot to the result using Google chrome](./images/fm-challenge1.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo to the code for the challenge](https://github.com/AllisonFavour/fm-challenge1)
+- Live Site URL: [Vercel link to view the challenge](fm-qrcode-challenge1.vercel.app)
 
 ## My process
+
+Started by using HTML to give the structure of the layout and having the CSS styling in mind.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- CSS custom properties and Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I use this challenge to relearn the basics of web development which is HTML and CSS. 
+In my HTML file, i used the Outfit font from google fonts using the provided link tag from google fonts. I also linked my CSS file using the link tag.
 
-To see how you can add code snippets, see below:
+This project reminded me the importance of using HTML to arrange the contents to make it much more easier to style the contents and components using CSS. Following the provided figma design, i had to use a div with the class name of 'main' which holds another div with the class name of 'container' which is a parent to two child div with the respective class names of 'box' and 'box2', 'box' holds the QR code image and 'box2' holds the h1 and p tags.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+The reason i had to arrange my contents like that was to achieve a pixel perfect similarity with the provided figma image, it will be clearer explaining the CSS file.
+So basically, the CSS file starts with the CSS reset (i added comment to help with clarity for whoever wants to read the code), then i used the CSS variables to store the font and colors this practice helps with writing less repetitive code especially for a large project where you will have to use the same colors and fonts for differents sections and pages. The font and colors were provided alongside the figma design so it really helped coding out the figma design.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Using the class selector i selected the div with the class name of 'main', i set the background color to the provided color using the CSS variable i stored, i also used min-width, max-width and min-height this helps with responsive and since it is a relatively simple project it is responsive for both small and big screens due to the way i utilized the sizes, also made use of display flex, and other flex properties to center the child div to 'main' which is 'container'.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Afterwards, on the div with the class name 'container' i gave it the white background to follow the figma design provided, then gave it a max-width of 370px which should make it responsive for smaller screens especially. Then selecting the the QR code image i gave it a width of 100% to make sure it is responsive and takes the width of its parent which has the class name of 'box', also gave it an height and added border radius to make the four edges curvy.
+
+Then on 'box2' the sibling to 'box' both children to the parent div 'container', i gave it some basic styles by adding the appropriate color, padding, margin and centralizing the texts with text-align: center.
+
+
 
 ### Continued development
 
+Hopefully, as time goes on i will get to learn about more on accessibility, thinking about it i realized how essential it is to follow a top accessibility and HTML semantic approach to help with all kinds of users trying to access our websites and web apps.
+
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Allison Favour](https://allison-favour-portfolio-darkmode.vercel.app/)
+- Frontend Mentor - [@AllisonFavour](https://www.frontendmentor.io/profile/AllisonFavour)
+- Twitter - [@TrillestOjay](https://x.com/TrillestOjay)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to random google searches and claude AI for some quick assistance and certain reminders and suggestions and thanks to frontendmentor for this platform of practicing hands-on project.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
