@@ -11,7 +11,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Useful resources](https://chatgpt.com)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -64,7 +64,6 @@ Then on 'box2' the sibling to 'box' both children to the parent div 'container',
 
 Hopefully, as time goes on i will get to learn about more on accessibility, thinking about it i realized how essential it is to follow a top accessibility and HTML semantic approach to help with all kinds of users trying to access our websites and web apps.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 
 ## Author
